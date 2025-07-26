@@ -22,6 +22,10 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
 
+//cookie-parser helps to:
+//Read and parse cookies from the request headers
+//Make cookies available via req.cookies object
+//Handle signed cookies 
 app.use(cookieParser());
 
 app.get("/", function (req, res) {
@@ -35,3 +39,4 @@ app.get('/read', function (req, res) {
 })
 
 app.listen(3000);
+//
